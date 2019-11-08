@@ -76,7 +76,9 @@ parser.add_argument('--multiprocessing-distributed', action='store_true',
                          'multi node data parallel training')
 
 best_acc = 0
-
+#os.environ['CUDA_VISIBLE_DEVICES'] = '2'
+os.environ["CUDA_VISIBLE_DEVICES"] = ','.join(map(str, [0,1]))
+print(os.environ["CUDA_VISIBLE_DEVICES"])
 
 def main():
     args = parser.parse_args()
