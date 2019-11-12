@@ -2,7 +2,7 @@
 # PyTorch分布式训练
 
 目前分布式训练的方法中主要分为数据并行与模型并行两种方法，其中在大多实验中以数据并行为主。模型并行主要存在于工业应用中，一般模型较大、训练数据是学术实验中训练数据的几何倍数。
-![](E:/TensorFlowJS/blog/source/_posts/distribute/1.png)
+![](img/1.png)
 
 ## 数据并行
 
@@ -20,7 +20,7 @@ DataParallel可以实现数据的并行训练，默认会按照设定的batch si
 
 盗张图 [原图](https://www.jianshu.com/p/9e36e5e36638?utm_source=oschina-app)
 
-![](E:/TensorFlowJS/blog/source/_posts/distribute/2.png)
+![](img/2.png)
 
 DataParallel(Module) [官方文档](https://pytorch.org/docs/1.0.0/nn.html?highlight=dataparallel#torch.nn.DataParallel ) [官方示例](https://pytorch.org/tutorials/beginner/former_torchies/parallelism_tutorial.html?highlight=dataparallel)
 
